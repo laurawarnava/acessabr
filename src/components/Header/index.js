@@ -7,10 +7,10 @@ const Header = () => {
     return (
         <header className="header__container">
             <div className="header__logo header__logo--state">
+                <img src={logoAcessaBr} alt="Logo AcessaBR" />
                 <span className="header__city">
                     / Estância Velha - RS
                 </span>
-                <img src={logoAcessaBr} alt="Logo AcessaBR" />
             </div>
             <div className="header__logo--ebac">
                 <span className="header__span">

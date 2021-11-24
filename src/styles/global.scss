@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
 @import 'colors';
 
 *{
@@ -8,12 +9,12 @@
 }
 
 html{
-    font-size: 68.5%;
+    font-size: 62.5%;
 }
 
 body{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    color: $black;
+    color: var(--black);
     margin: 0;
 }
 
@@ -31,4 +32,9 @@ body{
         max-width: 120rem;
         margin: 0 auto;
     }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
