@@ -9,10 +9,10 @@ function Footer() {
                 <div className="footer__container">
                     <p>
                         <strong>Observação:</strong> este site é uma amostra
-                        Fde desenvolvimento tecnológico de iniciativa independente,
+                        de desenvolvimento tecnológico de iniciativa independente,
                         as informações aqui apresentadas podem estar eventualmente desatualizadas,
                         por isso recomendamos sempre conferir as informações diretamente com o estabelecimento.
-                        A exibição dos locais, nesta página não caracteria recomendação de uso.
+                        A exibição dos locais, nesta página não caracteriza recomendação de uso.
                     </p>
                 </div>
             </div>
