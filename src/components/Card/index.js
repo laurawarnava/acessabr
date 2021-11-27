@@ -1,5 +1,5 @@
 import React from "react";
-import './style.scss';
+import './card.scss';
 import Button from "../Button";
 
 const Card = () => {
@@ -9,8 +9,8 @@ const Card = () => {
             <div className="card__content">
                 <h3>Nome do local</h3>
                 <ul className="card__facilities">
-                    <li className="card__facilities__item--unchecked"></li>
                     <li className="card__facilities__item"></li>
+                    <li className="card__facilities__item card__facilities__item--unchecked"></li>
                     <li className="card__facilities__item"></li>
                     <li className="card__facilities__item"></li>
                     <li className="card__facilities__item"></li>

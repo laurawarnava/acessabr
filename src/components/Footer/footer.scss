@@ -18,24 +18,26 @@
             
             a{
                 color: #0070C1;
+                
                 &:hover{
                     color: var(--blue)
                 }
             }
 
         &--first{
-            background-color: var(--lightGreen);
             color: var(--black);
+            background-color: var(--lightGreen);
             font-size: 1.5rem;
         }
 
         &--second{
-            background-color: var(--green);
             color: #ffff;
+            background-color: var(--green);
             font-size: 1.8rem;
+            
             small{
-                font-weight: 400;
                 display: block;
+                font-weight: 400;
                 width: 100%;
             }
         }

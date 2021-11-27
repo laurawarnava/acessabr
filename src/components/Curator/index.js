@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss';
+import './curator.scss';
 import curatorPhoto from '../../images/laura-warnava.jpg';
 
 function CuratorItem() {

@@ -2,9 +2,9 @@
 @import 'colors';
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
@@ -13,37 +13,37 @@ html{
 }
 
 body{
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color: var(--black);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
 .main,
 .footer{
     &__wrapper{
-        width: 100%;
+        align-items: flex-start;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         justify-content: center;
+        width: 100%;
     }
 
     &__container{
-        width: 100%;
-        max-width: 120rem;
         margin: 0 auto;
+        max-width: 120rem;
+        width: 100%;
     }
 }
 
 img{
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
 }
 
 .button{
+    align-self: flex-end;
     background-color: #DAE8FC;
     border-radius: .5rem;
     box-shadow: 1px 1px 4px rgba(0, 0, 0 , .2);
     padding: 1rem;
-    align-self: flex-end;
 }

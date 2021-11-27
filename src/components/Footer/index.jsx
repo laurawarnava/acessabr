@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss';
+import './footer.scss';
 import iconTop from '../../images/icon-top.png';
 
 function Footer() {
