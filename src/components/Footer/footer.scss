@@ -43,5 +43,11 @@
         }
     }
 
-
+    .button{
+        align-self: flex-end;
+        background-color: #DAE8FC;
+        border-radius: .5rem;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0 , .2);
+        padding: 1rem;
+    }
 }
