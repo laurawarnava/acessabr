@@ -1,35 +1,59 @@
-.header{
-    &__container{
-        align-items: center;
+@import '../../styles/_responsive.scss';
+
+.header {
+
+    &__container {
+        width: 100%;
+        margin: 4rem 0; // 1 rem = 10px
         display: flex;
         justify-content: space-between;
-        margin: 4rem 0;
-        width: 100%;
+        align-items: center;
     }
 
-    &__logo{
-        align-items: flex-end;
+    &__logo {
         display: flex;
+        align-items: flex-end;
 
-        &--state{
+        &--state {
             
-            img{
+            img {
                 margin-right: 1rem;
             }
         }
 
     }
 
-    &__city{
-        font-size: 1.8rem;
-        font-weight: 300;
+    &__city {
+        font-size: 1.8rem; 
         line-height: 1.8rem;
+        font-weight: 300;
     }
 
-    &__span{
+    &__span {
         font-size: 1.2rem;
-        font-weight: 400;
         line-height: 1.4rem;
+        font-weight: 400;
         margin-right: 1.2rem;
+    }
+
+    @media (max-width: $mobileLarge) {
+
+        &__logo {
+            flex-wrap: wrap;
+
+            &--ebac{
+                width: 90px;
+                margin-left: 2rem;
+            } 
+        }
+
+        &__city {
+            margin-top: 1rem;
+        }
+
+        &__span {
+            margin-bottom: .4rem;
+        }
+
     }
 }
