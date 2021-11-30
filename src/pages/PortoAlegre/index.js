@@ -14,7 +14,7 @@ const PLACES = [
     'Loja'
 ]
 
-const Home = props => {
+const PortoAlegre = props => {
     const [selectedPill, setSelectedPill] = useState('')
     return (
         <main id="main-content" className="home__container">
@@ -51,4 +51,4 @@ const Home = props => {
     )
 }
 
-export default Home;
+export default PortoAlegre;
