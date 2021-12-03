@@ -1,13 +1,14 @@
-import React, {useState, useEffect, useContext} from "react";
-import { FilterContext } from '../../contexts/FilterContext';
-import Card from "../Card";
-import SwiperCore, { Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
-import api from '../../config/api';
+import React, {useState, useEffect, useContext} from 'react'
+import { FilterContext } from '../../contexts/FilterContext'
+import SwiperCore, {Pagination} from 'swiper'
+import { Swiper, SwiperSlide} from 'swiper/react'
+import Card from '../Card'
+import api from '../../config/api'
 
 
-SwiperCore.use(Pagination)
+import 'swiper/swiper-bundle.css'
+
+SwiperCore.use([Pagination])
 
 function Slider() {
     const { filteredPlace, setFilteredPlace } = useContext(FilterContext)
@@ -15,7 +16,7 @@ function Slider() {
 
     useEffect(() => {
         const fetchPlaces = async () => {
-            const result = await api.get(`/places?category=${filteredPlace}`)
+            const result = await api.get(`?category_like=${filteredPlace ? filteredPlace : ''}`)
 
             console.log(result)
 
@@ -25,10 +26,10 @@ function Slider() {
         }
 
         fetchPlaces()
-    }, [filteredPlace]
- )
-    return (
-       <Swiper
+    }, [filteredPlace])
+
+    return(
+        <Swiper
             breakpoints={{
                 300: {
                     slidesPerView: 1
@@ -41,16 +42,15 @@ function Slider() {
                 }
             }}
         >
-        {
-            places.map(item => (
-            <SwiperSlide key={item.id}>
-                <Card key={item.id} item={item} />
-            </SwiperSlide>
-            ))
-        }
+            {
+                places.map(item => (
+                    <SwiperSlide key={item.id} >
+                        <Card key={item.id} item={item} />
+                    </SwiperSlide>
+                 ))
+            }
         </Swiper>
     )
 }
 
-export default Slider;
-
+export default Slider
