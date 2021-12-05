@@ -4,8 +4,6 @@ import SwiperCore, {Pagination} from 'swiper'
 import { Swiper, SwiperSlide} from 'swiper/react'
 import Card from '../Card'
 import api from '../../config/api'
-
-
 import 'swiper/swiper-bundle.css'
 
 SwiperCore.use([Pagination])
@@ -16,7 +14,7 @@ function Slider() {
 
     useEffect(() => {
         const fetchPlaces = async () => {
-            const result = await api.get(`?category_like=${filteredPlace ? filteredPlace : ''}`)
+            const result = await api.get(`?category_like=${filteredPlace ? filteredPlace: ''}`)
 
             console.log(result)
 
@@ -53,4 +51,4 @@ function Slider() {
     )
 }
 
-export default Slider
+export default Slider;
