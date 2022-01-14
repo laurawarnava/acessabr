@@ -1,1 +1,1 @@
-## Aplicação criada para que seja possível pesquisar por locais turísticos com acessibilidade para deficiente.
+## Aplicação criada para que seja possível pesquisar por locais turísticos com acessibilidade para deficientes.
